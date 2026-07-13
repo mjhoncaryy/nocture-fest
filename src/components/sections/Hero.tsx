@@ -46,19 +46,6 @@ export function Hero({ onTicket }: HeroProps) {
             <a className="button button-secondary" href="#lineup"><Play size={16} weight="fill" /> View lineup</a>
           </div>
         </motion.div>
-        <motion.aside
-          className="hero-pass"
-          initial={reduceMotion ? false : { opacity: 0, y: 30, rotate: -5 }}
-          animate={reduceMotion ? { opacity: 1 } : { opacity: 1, y: [0, -8, 0], rotate: -4 }}
-          transition={reduceMotion ? { duration: 0.2 } : { duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
-          aria-label="Weekend festival pass preview"
-        >
-          <div className="pass-glow" />
-          <p className="pass-brand">NOCTURNE FEST</p>
-          <strong>WEEKEND<br />PASS</strong>
-          <div className="pass-details"><span>JAKARTA</span><span>JUL 18-20</span></div>
-          <i className="pass-serial">NF26 / 3 NIGHTS</i>
-        </motion.aside>
       </div>
     </section>
   );
